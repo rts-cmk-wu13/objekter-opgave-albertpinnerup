@@ -1,0 +1,33 @@
+@import url(hero.css);
+
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+p {
+	padding-bottom: 1em;
+}
+
+/* RWD: */
+img {
+	width: 100%;
+	height: auto;
+    display: block;
+}
