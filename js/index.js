@@ -138,8 +138,11 @@ advantages.forEach(advantage => {
 let footerSection = document.querySelector(".footer")
 
 footerSection.innerHTML = `
+<div class="footer__company">
     <h3 class="footer__companyname">${footer.companyText.companyName}</h3>
     <h2 class="footer__companyslogan">${footer.companyText.companySlogan}</h2>
+</div>
+    
 `
 
 
