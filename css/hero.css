@@ -1,0 +1,41 @@
+.hero {
+    position: relative;
+    margin-bottom: 24rem;
+}
+
+.hero__headline {
+    max-width: 45rem;
+    padding: 6.125rem 9.75rem 4.5625rem 3.875rem;
+    background-color: #fff;
+    position: absolute;
+    top: 23.875rem;
+    left: 3.9375rem;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, .10);
+    
+}
+
+.hero__paragraph {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #666666;
+    padding-bottom: 1.81rem;
+    font-size: 20px;
+}
+
+.hero__button {
+    display: flex;
+    max-width: 250px;
+    width: 100%;
+    padding: 1.28rem 0;
+    background-color: #F78065;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.hero__button img {
+    max-width: 24px;
+}
+

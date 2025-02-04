@@ -5,6 +5,10 @@
 
 console.log(hero.headline);
 
+function highLightText(sourceTxt, highLightTxt) {
+    return sourceTxt.replace(highLightTxt, `<span class=highlight__text>${highLightTxt}</span>`)
+}
+
 // ! Initialise hero html
 
 let heroSection = document.querySelector(".hero");
@@ -20,11 +24,36 @@ heroSection.append(heroImgDiv, heroHeadlineDiv)
 heroImgDiv.innerHTML = `
 <img src="${hero.image}" alt="">
 `
-
-
 heroHeadlineDiv.innerHTML = `
-    <h1 class="hero__title">${hero.headline}</h1>
-    <p class="hero__paragraph">${hero.copy}</p>
+    <h1 class="hero__title">${highLightText(hero.headline, "save your time")}</h1>
+    <h4 class="hero__paragraph">${hero.copy}</h4>
     <a href="" class="hero__button"><img src="${hero.icon}" alt=""> Explore</a>
 
 `
+// ! SERVICES
+
+let servicesSection = document.querySelector(".services");
+
+
+services.forEach(service => {
+    let servicesCard = document.createElement("div");
+    servicesCard.classList.add("services__card");
+
+    servicesCard.innerHTML = `
+    <div class="services__img">
+        <img src="${service.illustration}" alt="">
+    </div>
+    <h3 class="services__title">${service.headline}</h3>
+    <p class="services__paragraph">${service.text}</p>
+    <a href="" class="services__link">${service.linktext}</a>
+    `
+    servicesSection.append(servicesCard)
+});
+
+
+
+
+
+
+
+
