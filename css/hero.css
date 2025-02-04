@@ -39,3 +39,13 @@
     max-width: 24px;
 }
 
+@media screen and (max-width: 89rem) {
+    .hero__headline {
+        top: 0;
+        bottom: 0;
+    }
+
+    .hero {
+        margin-bottom: 6rem;
+    }
+}
