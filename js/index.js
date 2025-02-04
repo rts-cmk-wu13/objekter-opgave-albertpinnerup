@@ -133,6 +133,104 @@ advantages.forEach(advantage => {
 
 
 
+// ! FOOTER
+
+let footerSection = document.querySelector(".footer")
+
+footerSection.innerHTML = `
+    <h3 class="footer__companyname">${footer.companyText.companyName}</h3>
+    <h2 class="footer__companyslogan">${footer.companyText.companySlogan}</h2>
+`
+
+
+// discover list
+
+let discoverSection = document.createElement("section")
+discoverSection.classList.add("discover");
+
+discoverSection.innerHTML = `<h4 class="list__headline">${footer.discover.headline}</h4>`
+
+let discoverList = document.createElement("ul");
+discoverList.classList.add("list");
+
+footer.discover.links.forEach(link => {
+    let listItem = document.createElement("li");
+    listItem.classList.add("listitem");
+    listItem.innerHTML = `<a href="${link.linkURL}">${link.linkName}</a>`
+    
+    discoverList.append(listItem)
+});
+
+discoverSection.append(discoverList);
+
+
+// manager list
+
+let managerSection = document.createElement("section")
+managerSection.classList.add("manager");
+
+managerSection.innerHTML = `<h4 class="list__headline">${footer.manager.headline}</h4>`
+
+let managerList = document.createElement("ul");
+managerList.classList.add("list");
+
+footer.manager.links.forEach(link => {
+    let listItem = document.createElement("li");
+    listItem.classList.add("listitem");
+    listItem.innerHTML = `<a href="${link.linkURL}">${link.linkName}</a>`
+    
+    managerList.append(listItem)
+});
+
+managerSection.append(managerList);
+
+
+// Assistance list
+
+let assistanceSection = document.createElement("section")
+assistanceSection.classList.add("assistance");
+
+assistanceSection.innerHTML = `<h4 class="list__headline">${footer.assistance.headline}</h4>`
+
+let assistanceList = document.createElement("ul");
+assistanceList.classList.add("list");
+
+footer.assistance.links.forEach(link => {
+    let listItem = document.createElement("li");
+    listItem.classList.add("listitem");
+    listItem.innerHTML = `<a href="${link.linkURL}">${link.linkName}</a>`
+    
+    assistanceList.append(listItem)
+});
+
+assistanceSection.append(assistanceList);
+
+
+// navigation
+
+let nav = document.createElement("nav")
+nav.classList.add("footer__nav");
+
+nav.innerHTML = `<p class="copyright">${footer.nav.copyright}</p>`
+
+let navList = document.createElement("ul");
+navList.classList.add("menu");
+
+footer.nav.links.forEach(link => {
+    let listItem = document.createElement("li");
+    listItem.classList.add("menu__item");
+    listItem.innerHTML = `<a href="${link.linkURL}">${link.linkName}</a>`
+    
+    navList.append(listItem)
+});
+
+nav.append(navList);
+
+
+footerSection.append(discoverSection, managerSection, assistanceSection, nav);
+
+
+
 
 
 
