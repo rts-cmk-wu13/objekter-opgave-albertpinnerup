@@ -45,10 +45,23 @@ services.forEach(service => {
     </div>
     <h3 class="services__title">${service.headline}</h3>
     <p class="services__paragraph">${service.text}</p>
-    <a href="" class="services__link">${service.linktext}</a>
+    <a href="" class="services__link">${highLightText(service.linktext, service.linktext)}</a>
     `
     servicesSection.append(servicesCard)
 });
+
+// ! FACILITIES
+
+let facilitiesSection = document.querySelector(".facilities")
+
+facilities.forEach(facility => {
+    let facilitiesCard = document.createElement("div");
+    facilitiesCard.classList.add("facilities__card");
+
+    facilitiesCard.innerHTML = `
+    
+    `
+})
 
 
 

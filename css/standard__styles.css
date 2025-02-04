@@ -1,4 +1,6 @@
 @import url(hero.css);
+@import url(services.css);
+
 
 * {
     margin: 0;
@@ -20,6 +22,11 @@ h1 {
     padding-bottom: 1.8125rem;
 }
 
+h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
 .highlight__text {
     color: #F78065;
 }
@@ -30,11 +37,12 @@ h1 {
 }
 
 main section:not(.hero) {
-    padding: 0 119px;
+    padding: 0 100px;
 }
 
 p {
 	padding-bottom: 1em;
+    color: #666666;
 }
 
 a {
