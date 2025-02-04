@@ -100,10 +100,35 @@ sites.places.forEach(sitePlaces => {
         <div class="sites__img"><img src="${sitePlaces.img}" alt=""></div>
         <h3 class="sites__name">${sitePlaces.name}</h3>
         <p class="sites__city">${sitePlaces.city}</p>
-        <a href="" class="sites__link">View the Site</a>
+        <a href="" class="sites__link highlight__text">View the Site</a>
     `
 
     sitesCards.append(sitesCard);
+});
+
+
+
+// ! ADVANTAGES
+
+let advantagesSection = document.querySelector(".advantages");
+
+advantagesSection.innerHTML = `
+    <h2 class="advantages__title">Our advantages</h2>
+`
+
+advantages.forEach(advantage => {
+    let advangtageCard = document.createElement("div");
+    advangtageCard.classList.add("advantage__card");
+
+    advangtageCard.innerHTML = `
+        <div class="advantage__icon">
+            <img src="${advantage.icon}" alt="">
+        </div>
+        <h3 class="advantages__headline">${advantage.headline}</h3>
+        <p class="advantage__paragraph">${advantage.text}</p>
+    `
+
+    advantagesSection.append(advangtageCard)
 });
 
 
