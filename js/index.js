@@ -118,14 +118,14 @@ advantagesSection.innerHTML = `
 
 advantages.forEach(advantage => {
     let advangtageCard = document.createElement("div");
-    advangtageCard.classList.add("advantage__card");
+    advangtageCard.classList.add("advantages__card");
 
     advangtageCard.innerHTML = `
-        <div class="advantage__icon">
+        <div class="advantages__icon">
             <img src="${advantage.icon}" alt="">
         </div>
         <h3 class="advantages__headline">${advantage.headline}</h3>
-        <p class="advantage__paragraph">${advantage.text}</p>
+        <p class="advantages__paragraph">${advantage.text}</p>
     `
 
     advantagesSection.append(advangtageCard)
