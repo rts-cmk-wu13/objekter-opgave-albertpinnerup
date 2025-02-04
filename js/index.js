@@ -3,13 +3,11 @@
 //eksempel på at udskrive alle overskrifter i services i konsollen:
 // services.forEach(service => console.log(service.headline))
 
-console.log(hero.headline);
-
 function highLightText(sourceTxt, highLightTxt) {
     return sourceTxt.replace(highLightTxt, `<span class=highlight__text>${highLightTxt}</span>`)
 }
 
-// ! Initialise hero html
+// ! HERO
 
 let heroSection = document.querySelector(".hero");
 
@@ -30,10 +28,11 @@ heroHeadlineDiv.innerHTML = `
     <a href="" class="hero__button"><img src="${hero.icon}" alt=""> Explore</a>
 
 `
+
+
 // ! SERVICES
 
 let servicesSection = document.querySelector(".services");
-
 
 services.forEach(service => {
     let servicesCard = document.createElement("div");
@@ -50,18 +49,63 @@ services.forEach(service => {
     servicesSection.append(servicesCard)
 });
 
+
+
 // ! FACILITIES
 
 let facilitiesSection = document.querySelector(".facilities")
+facilitiesSection.innerHTML = `
+    <h2 class="facilities__title">${facilities.headline}</h2>
+    `
 
-facilities.forEach(facility => {
+facilities.options.forEach(facilityOption => {
     let facilitiesCard = document.createElement("div");
     facilitiesCard.classList.add("facilities__card");
 
     facilitiesCard.innerHTML = `
     
+        <div class="facilities__img">
+            <img src="${facilityOption.icon}" alt="">
+        </div>
+        <h3 class="facilities__title-card">${facilityOption.headline}</h3>
+        <p class="facilitiies__paragraph">${facilityOption.text}</p>
+        <a href="" class="facilities__link highlight__text">Show me more</a>
     `
+    facilitiesSection.append(facilitiesCard)
 })
+
+
+
+// ! SITES
+
+let sitesSection = document.querySelector(".sites")
+
+sitesSection.innerHTML = `
+<div class="sites__head">
+    <h2 class="sites__title">${sites.headline}</h2>
+    <p class="sites__paragraph">${sites.text}</p>
+    <a href="" class="sites__button"><img src="${sites.btnicon}" alt=""> Start</a>
+</div> 
+`;
+
+let sitesCards = document.createElement("div")
+sitesCards.classList.add("sites__cards")
+sitesSection.append(sitesCards)
+
+sites.places.forEach(sitePlaces => {
+    let sitesCard = document.createElement("div");
+    sitesCard.classList.add("sites__card");
+
+    sitesCard.innerHTML = `
+        <div class="sites__img"><img src="${sitePlaces.img}" alt=""></div>
+        <h3 class="sites__name">${sitePlaces.name}</h3>
+        <p class="sites__city">${sitePlaces.city}</p>
+        <a href="" class="sites__link">View the Site</a>
+    `
+
+    sitesCards.append(sitesCard);
+});
+
 
 
 
