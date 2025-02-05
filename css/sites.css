@@ -74,6 +74,11 @@
         justify-self: center;
     }
 
+    .sites__img {
+        max-width: 230px;
+        width: fit-content;
+    }
+
     .sites__button {
         justify-self: center;
     }

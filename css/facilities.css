@@ -1,12 +1,13 @@
 .facilities {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    row-gap: 2rem;
     margin-bottom: 16.4375rem;
 }
 
 .facilities__title {
     grid-column: 1/-1;
-    margin-bottom: 6.75rem;
+    margin-bottom: 4.75rem;
 }
 
 .facilities__title-card {
