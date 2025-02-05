@@ -1,0 +1,67 @@
+footer {
+    background-color: #F7F7F7;
+    padding: 6rem 6.25rem 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 5.3125rem;
+}
+
+.footer__company {
+    max-width: 222px ;
+    grid-column: 1/3;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+.discover {
+    grid-column: 5/7
+}
+
+.manager {
+    grid-column: 8/10;
+}
+
+.assistance {
+    grid-column: 11/13;
+}
+
+.footer__nav {
+    grid-area: 2/1/3/-1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.75rem 0 0;
+    border-block-start: solid 1px rgba(0, 0, 0, .20);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    
+}
+
+.copyright {
+    padding-bottom: 0;
+    font-size: 14px;
+    color: black;
+}
+
+.menu__item a, .listitem a {
+    color: black;
+    font-size: 14px;
+}
+
+.list__headline {
+    font-size: 18px;
+    padding-bottom: 1.5rem;
+}
+
+.list {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+

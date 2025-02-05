@@ -1,0 +1,30 @@
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
+    margin-block-end: 15.6875rem;
+}
+
+.advantages__title {
+    grid-column: 1/-1;
+    margin-block-end: 6.75rem;
+}
+
+.advantages__card {
+    max-width: 386px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages__icon {
+    width: 32px;
+    margin-block-end: 4rem;
+}
+
+.advantages__headline {
+    font-size: 22px;
+}
+
+.advantages__paragraph {
+    font-size: 14px;
+    margin-block-start: auto;
+}

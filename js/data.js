@@ -96,3 +96,94 @@ let advantages = [
 ]
 
 // Opret dit dataobjekt til footerens indhold herunder
+
+let footer = {
+    companyText: {
+        companyName: "Easy Camper",
+        companySlogan: "When Passion Meets Comfort."
+    },
+    discover: {
+        headline: "Discover the Network",
+        links: [
+            {
+                linkName: "Where to shop",
+                linkURL: "#"
+            },
+            {
+                linkName: "Tour Guided",
+                linkURL: "#"
+            },
+            {
+                linkName: "Our Tours",
+                linkURL: "#"
+            },
+            {
+                linkName: "About Us",
+                linkURL: "#"
+            },
+        ]
+    },
+    manager: {
+        headline: "Become a Manager",
+        links: [
+            {
+                linkName: "Join your Pairing",
+                linkURL: "#"
+            },
+            {
+                linkName: "Offer your Service",
+                linkURL: "#"
+            },
+            {
+                linkName: "Are you a guide?",
+                linkURL: "#"
+            },
+        ]
+    },
+    assistance: {
+        headline: "Assistance",
+        links: [
+            {
+                linkName: "Support Center",
+                linkURL: "#"
+            },
+            {
+                linkName: "FAQs",
+                linkURL: "#"
+            },
+            {
+                linkName: "Cancellation Options",
+                linkURL: "#"
+            },
+            {
+                linkName: "Reliability and Security",
+                linkURL: "#"
+            },
+        ]
+    },
+    nav: {
+        copyright: "EazyCamper. All rights reserved",
+        links: [
+            {
+                linkName: "About",
+                linkURL: "#"
+            },
+            {
+                linkName: "Site Map",
+                linkURL: "#"
+            },
+            {
+                linkName: "Terms",
+                linkURL: "#"
+            },
+            {
+                linkName: "Privacy Policy",
+                linkURL: "#"
+            },
+            {
+                linkName: "Teams",
+                linkURL: "#"
+            },
+        ]
+    },
+}

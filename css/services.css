@@ -1,0 +1,28 @@
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1rem));
+    gap: 2.56rem;
+    margin-bottom: 15rem;
+    justify-content: center;
+}
+
+.services__card {
+    max-width: 24.125rem;
+}
+
+.services__img {
+    max-width: 250px;
+    max-height: 180px;
+    margin-bottom: 5.25rem;
+}
+
+.services__paragraph,
+.facilites__paragraph {
+    font-size: 16px;
+    padding-bottom: 1.2rem;
+}
+
+.services__link,
+.facilities__link {
+    font-weight: 600;
+}
